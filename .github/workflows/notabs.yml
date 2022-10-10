@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Check for tab characters
-      run: "grep -R $'\t' src/ || false"
+      run: "grep -R $'\t' src/ && false"
